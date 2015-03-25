@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Frame"
+    android:background="#ff000000"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/nameFeild"
+        android:layout_x="72dp"
+        android:layout_y="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ageFeild"
+        android:layout_marginTop="65dp"
+        android:background="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ageFeild"
+        android:layout_x="72dp"
+        android:layout_y="148dp"
+        android:text="Age"
+        android:layout_below="@+id/nameFeild"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="#fffdfbff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/createButton"
+        android:layout_x="133dp"
+        android:layout_y="207dp"
+        android:onClick="createClient"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/ageFeild"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
